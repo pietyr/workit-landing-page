@@ -1,0 +1,8 @@
+{
+  "name": "workit-landing-page",
+  "author": "Piotr Kisiel",
+  "license": "ISC",
+  "dependencies": {
+    "sass": "^1.64.2"
+  }
+}

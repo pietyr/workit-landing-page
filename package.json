@@ -4,5 +4,8 @@
   "license": "ISC",
   "dependencies": {
     "sass": "^1.64.2"
+  },
+  "scripts": {
+    "build": "sass --style=compressed ./scss/style.scss ./style.css"
   }
 }

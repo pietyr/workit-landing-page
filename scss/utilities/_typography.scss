@@ -1,0 +1,37 @@
+@font-face {
+  font-family: fraunces;
+  src: url(../../assets/fonts/fraunces/Fraunces-VariableFont_SOFT\WONK\opsz\wght.ttf);
+}
+
+@font-face {
+  font-family: manrope;
+  src: url(../../assets/fonts/manrope/Manrope-VariableFont_wght.ttf);
+}
+
+$font-families: (
+  'heading-l': 'fraunces serif',
+  'heading-m': 'fraunces serif',
+  'heading-s': 'fraunces serif',
+  'body': 'manrope sans-serif',
+);
+
+$font-weights: (
+  'heading-l': 600,
+  'heading-m': 600,
+  'heading-s': 600,
+  'body': 400,
+);
+
+$font-sizes: (
+  'heading-l': 5rem,
+  'heading-m': 3.5rem,
+  'heading-s': 2rem,
+  'body': 1.125rem,
+);
+
+$line-heights: (
+  'heading-l': 5rem,
+  'heading-m': 4rem,
+  'heading-s': 2.5rem,
+  'body': 2rem,
+);

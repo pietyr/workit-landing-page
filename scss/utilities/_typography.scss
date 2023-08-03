@@ -5,15 +5,8 @@
 
 @font-face {
   font-family: manrope;
-  src: url(../../assets/fonts/manrope/Manrope-VariableFont_wght.ttf);
+  src: url(../../assets/fonts/manrope/static/Manrope-Regular.ttf);
 }
-
-$font-families: (
-  'heading-l': 'fraunces serif',
-  'heading-m': 'fraunces serif',
-  'heading-s': 'fraunces serif',
-  'body': 'manrope sans-serif',
-);
 
 $font-weights: (
   'heading-l': 600,

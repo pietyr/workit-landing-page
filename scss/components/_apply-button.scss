@@ -3,5 +3,12 @@
 .apply-button {
   color: utils.$white;
   text-decoration: none;
-  border-bottom: 2px solid utils.$eucalyptus;
+  border-bottom: 3px solid utils.$eucalyptus;
+  font-weight: 600;
+  transition: 0.2s;
+}
+@media (hover: hover) {
+  .apply-button:hover {
+    color: utils.$eucalyptus;
+  }
 }

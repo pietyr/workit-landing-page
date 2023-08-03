@@ -2,7 +2,7 @@
 @use 'sass:map';
 
 body {
-  font-family: map.get(utils.$font-families, 'body');
+  font-family: manrope, sans-serif;
   font-weight: map.get(utils.$font-weights, 'body');
   font-size: map.get(utils.$font-sizes, 'body');
   line-height: map.get(utils.$line-heights, 'body');

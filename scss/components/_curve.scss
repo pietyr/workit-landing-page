@@ -1,0 +1,18 @@
+@use '../utilities' as utils;
+
+.curve {
+  position: relative;
+  overflow: hidden;
+  height: 80px;
+
+  &::after {
+    border-radius: 100%;
+    position: absolute;
+    background-color: utils.$dark-purple;
+    right: -250px;
+    left: -250px;
+    top: -200px;
+    content: '';
+    bottom: 0;
+  }
+}

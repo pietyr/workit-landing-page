@@ -1,8 +1,6 @@
 @use '../utilities' as utils;
 
 .header {
-  background-color: utils.$dark-purple;
-
   a {
     display: block;
   }
@@ -16,11 +14,13 @@
     justify-content: space-between;
     padding: clamp(2rem, 0.2vw, 3.5rem) clamp(1rem, 4vw, 10rem);
     align-items: center;
+    background-color: utils.$dark-purple;
   }
 
   &__bottom {
     display: flex;
     flex-direction: column;
     align-items: center;
+    background-color: utils.$dark-purple;
   }
 }

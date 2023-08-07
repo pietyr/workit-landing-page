@@ -17,4 +17,10 @@
     padding: clamp(2rem, 0.2vw, 3.5rem) clamp(1rem, 4vw, 10rem);
     align-items: center;
   }
+
+  &__bottom {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
 }

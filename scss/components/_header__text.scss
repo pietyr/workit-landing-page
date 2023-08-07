@@ -1,0 +1,16 @@
+@use '../utilities' as utils;
+@use 'sass:map';
+
+.header__text {
+  text-align: center;
+  max-width: 250px;
+  color: utils.$white;
+  font-family: fraunces, serif;
+  font-weight: map.get(utils.$font-weights, 'heading-s');
+  font-size: map.get(utils.$font-sizes, 'heading-s');
+  line-height: map.get(utils.$line-heights, 'heading-s');
+
+  &--underline {
+    border-bottom: 2px solid utils.$eucalyptus;
+  }
+}

@@ -3,15 +3,16 @@
 .curve {
   position: relative;
   overflow: hidden;
-  height: 80px;
+  // height: 150px;
+  height: 17.5vh;
 
   &::after {
     border-radius: 100%;
     position: absolute;
     background-color: utils.$dark-purple;
-    right: -250px;
-    left: -250px;
-    top: -200px;
+    right: -37.5vh;
+    left: -37.5vh;
+    top: -22.5vh;
     content: '';
     bottom: 0;
   }

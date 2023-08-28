@@ -22,6 +22,10 @@
     padding-top: 2rem;
     padding-bottom: 1.5rem;
     text-align: center;
+    color: utils.$white;
+    font-family: fraunces, serif;
+    font-weight: map.get(utils.$font-weights, 'heading-s');
+    line-height: map.get(utils.$line-heights, 'heading-s');
   }
 
   &__text {
@@ -30,6 +34,11 @@
     padding-left: 1rem;
     padding-right: 1rem;
     text-align: center;
+    color: utils.$white;
+    font-family: manrope, sans-serif;
+    font-weight: map.get(utils.$font-weights, 'body');
+    font-size: map.get(utils.$font-sizes, 'body');
+    line-height: map.get(utils.$line-heights, 'body');
   }
 
   &__button-container {

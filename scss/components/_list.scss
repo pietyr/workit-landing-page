@@ -1,9 +1,11 @@
 @use '../utilities' as utils;
+@use 'sass:map';
 
 .list {
   padding-left: 0;
   display: flex;
   flex-direction: column;
+  gap: 2rem;
 
   &__item {
     list-style-type: none;
@@ -21,5 +23,27 @@
     width: 3rem;
     height: 3rem;
     text-align: center;
+    color: utils.$dark-purple;
+    font-family: fraunces, serif;
+    font-weight: map.get(utils.$font-weights, 'heading-s');
+    line-height: map.get(utils.$line-heights, 'heading-s');
+  }
+
+  &__header {
+    color: utils.$dark-purple;
+    font-family: fraunces, serif;
+    font-weight: map.get(utils.$font-weights, 'heading-s');
+    font-size: map.get(utils.$font-sizes, 'heading-s');
+    line-height: map.get(utils.$line-heights, 'heading-s');
+  }
+
+  &__text {
+    color: utils.$dark-purple;
+    font-family: manrope, sans-serif;
+    font-weight: map.get(utils.$font-weights, 'body');
+    font-size: map.get(utils.$font-sizes, 'body');
+    line-height: map.get(utils.$line-heights, 'body');
+    text-align: center;
+    padding: 0 1rem;
   }
 }

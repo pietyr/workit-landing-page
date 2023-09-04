@@ -1,0 +1,36 @@
+@use '../utilities' as utils;
+@use 'sass:map';
+
+.footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 2rem;
+  gap: 2rem;
+  justify-content: space-between;
+
+  &__socials {
+    display: flex;
+    justify-content: space-between;
+    gap: 1.5rem;
+  }
+
+  &__author {
+    margin: 0;
+
+    color: utils.$dark-purple;
+    font-family: fraunces, serif;
+    a {
+      text-decoration: none;
+      font-weight: 600;
+      color: utils.$dark-purple;
+      transition: 0.2s;
+      &:visited {
+        color: utils.$dark-purple;
+      }
+      &:hover {
+        color: utils.$eucalyptus;
+      }
+    }
+  }
+}

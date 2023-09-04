@@ -1,7 +1,14 @@
+@use '../utilities' as utils;
+@use 'sass:map';
+
 .header__image {
   display: block;
   position: relative;
   top: -10vh;
   width: 80%;
   margin: 0 auto;
+
+  @include utils.m {
+    width: 65%;
+  }
 }

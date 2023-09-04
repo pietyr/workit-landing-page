@@ -10,6 +10,13 @@
   font-size: 2.875rem;
   line-height: 3.25rem;
 
+  @include utils.m {
+    max-width: 500px;
+    font-weight: map.get(utils.$font-weights, 'heading-m');
+    font-size: map.get(utils.$font-sizes, 'heading-m');
+    line-height: map.get(utils.$line-heights, 'heading-m');
+  }
+
   &--underline {
     border-bottom: 2px solid utils.$eucalyptus;
   }

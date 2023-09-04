@@ -1,6 +1,8 @@
 @use '../utilities' as utils;
 
 .header {
+  position: relative;
+  overflow: hidden;
   a {
     display: block;
   }

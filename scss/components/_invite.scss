@@ -26,10 +26,13 @@
   &__box {
     background-color: utils.$dark-purple;
     position: relative;
+    max-width: 95%;
+    margin: 0 auto;
     @include utils.m {
       max-width: 75%;
       align-self: flex-end;
       padding: 1rem 3rem;
+      margin: unset;
     }
   }
 
@@ -75,7 +78,10 @@
   &__button-container {
     background-color: utils.$dark-purple;
     display: flex;
-    justify-content: left;
+    justify-content: center;
+    @include utils.m {
+      justify-content: left;
+    }
     align-items: center;
     padding-top: 1.5rem;
     padding-bottom: 2rem;

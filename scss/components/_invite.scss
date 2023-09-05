@@ -2,10 +2,12 @@
 @use 'sass:map';
 
 .invite {
-  overflow: hidden;
+  // overflow: hidden;
   color: utils.$white;
-  margin-left: 1rem;
-  margin-right: 1rem;
+  margin: 0 auto;
+  max-width: 700px;
+  display: flex;
+  flex-direction: column;
 
   &__image {
     display: block;
@@ -14,24 +16,47 @@
     transform: translateY(3.5rem);
     z-index: -1;
     max-width: 85%;
+    @include utils.m {
+      max-width: 35%;
+      margin: unset;
+      transform: translateY(50%);
+    }
+  }
+
+  &__box {
+    background-color: utils.$dark-purple;
+    position: relative;
+    @include utils.m {
+      max-width: 75%;
+      align-self: flex-end;
+      padding: 1rem 3rem;
+    }
   }
 
   &__header {
-    background-color: utils.$dark-purple;
+    // background-color: utils.$dark-purple;
     margin: 0;
     padding-top: 2rem;
     padding-bottom: 1.5rem;
     text-align: center;
+
     color: utils.$white;
     font-family: fraunces, serif;
     font-weight: map.get(utils.$font-weights, 'heading-s');
 
     line-height: map.get(utils.$line-heights, 'heading-s');
+
+    @include utils.m {
+      text-align: left;
+      font-weight: map.get(utils.$font-weights, 'heading-m');
+      font-size: 2.75rem;
+      line-height: map.get(utils.$line-heights, 'heading-m');
+    }
   }
 
   &__text {
     margin: 0;
-    background-color: utils.$dark-purple;
+    // background-color: utils.$dark-purple;
     padding-left: 30px;
     padding-right: 30px;
     text-align: center;
@@ -40,12 +65,17 @@
     font-weight: map.get(utils.$font-weights, 'body');
     font-size: 1rem;
     line-height: map.get(utils.$line-heights, 'body');
+    @include utils.m {
+      text-align: left;
+      padding-left: unset;
+      padding-right: unset;
+    }
   }
 
   &__button-container {
     background-color: utils.$dark-purple;
     display: flex;
-    justify-content: center;
+    justify-content: left;
     align-items: center;
     padding-top: 1.5rem;
     padding-bottom: 2rem;

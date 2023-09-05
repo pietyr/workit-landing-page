@@ -3,6 +3,7 @@
 .header {
   position: relative;
   overflow: hidden;
+  // background-color: utils.$dark-purple;
   a {
     display: block;
   }
@@ -13,6 +14,8 @@
     padding: clamp(2rem, 0.2vw, 3.5rem) clamp(1rem, 4vw, 10rem);
     align-items: center;
     background-color: utils.$dark-purple;
+    padding-left: calc((100vw - 1120px) / 2);
+    padding-right: calc((100vw - 1120px) / 2);
   }
 
   &__bottom {

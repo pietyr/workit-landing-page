@@ -22,8 +22,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://github.com/pietyr/workit-landing-page)
-- Live Site URL: [Add live site URL here](https://pietyr.github.io/workit-landing-page/)
+- Solution URL: [Github](https://github.com/pietyr/workit-landing-page)
+- Live Site URL: [Github pages](https://pietyr.github.io/workit-landing-page/)
 
 ## My process
 

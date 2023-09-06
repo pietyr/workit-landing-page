@@ -9,11 +9,18 @@
   &::after {
     border-radius: 100%;
     position: absolute;
-    background-color: utils.$dark-purple;
     right: -37.5vh;
     left: -37.5vh;
     top: -22.5vh;
     content: '';
     bottom: 0;
+  }
+
+  &--purple::after {
+    background-color: utils.$dark-purple;
+  }
+
+  &--white::after {
+    background-color: utils.$ghost-white;
   }
 }

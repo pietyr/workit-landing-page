@@ -14,8 +14,10 @@
     padding: clamp(2rem, 0.2vw, 3.5rem) clamp(1rem, 4vw, 10rem);
     align-items: center;
     background-color: utils.$dark-purple;
-    padding-left: calc((100vw - 1120px) / 2);
-    padding-right: calc((100vw - 1120px) / 2);
+    @include utils.xl {
+      padding-left: calc((100vw - 1120px) / 2);
+      padding-right: calc((100vw - 1120px) / 2);
+    }
   }
 
   &__bottom {
@@ -23,5 +25,8 @@
     flex-direction: column;
     align-items: center;
     background-color: utils.$dark-purple;
+    @include utils.m {
+      padding-bottom: 5vh;
+    }
   }
 }

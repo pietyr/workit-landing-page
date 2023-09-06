@@ -9,6 +9,9 @@
   margin: 0 auto;
 
   @include utils.m {
+    top: -15vh;
     width: 65%;
   }
+
+  max-width: 767px;
 }

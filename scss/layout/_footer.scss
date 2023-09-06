@@ -9,6 +9,10 @@
   gap: 2rem;
   justify-content: space-between;
 
+  @include utils.l {
+    margin-top: 6rem;
+  }
+
   &__socials {
     display: flex;
     justify-content: space-between;

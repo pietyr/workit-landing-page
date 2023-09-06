@@ -5,9 +5,11 @@
   // overflow: hidden;
   color: utils.$white;
   margin: 0 auto;
-  max-width: 700px;
+  max-width: 1180px;
   display: flex;
   flex-direction: column;
+  padding-left: 40px;
+  padding-right: 40px;
 
   &__image {
     display: block;
@@ -16,6 +18,7 @@
     transform: translateY(3.5rem);
     z-index: -1;
     max-width: 85%;
+
     @include utils.m {
       max-width: 35%;
       margin: unset;
